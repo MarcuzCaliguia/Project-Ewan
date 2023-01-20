@@ -1,0 +1,663 @@
+body {
+    background-color: #071432;
+    color: white;
+  }
+  
+  .night-mode {
+    background-color: black;
+    color: white;
+  }
+  *{
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+/*Navbar*/
+:root{
+    --header-color:#d8a00633; 
+}
+header{
+    background-color: var(--header-color);
+}
+li{
+    list-style: none;
+}
+a.active{
+    background-color:black;
+    border-radius: 16px;
+    padding: 10px 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.navbar{
+    display: flex;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+/*-- Brand ( Compsci) --*/
+.nav-brand{
+    padding: top 5px;
+    padding-bottom: 5px;
+    margin-left: 150px;
+    overflow: auto;
+}
+.nav-brand img{
+    height: 100px;
+    width: auto;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+    display: inline-block;
+}
+.nav-link:hover{
+    background-color:black;
+    border-radius: 16px;
+    padding: 10px 20px;
+}
+/*hamburger*/
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position:fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--header-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
+/* Faculty Picture */
+
+.groupfaculty{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+.faculty{
+    justify-content: center; 
+    padding: 80px;
+}
+.imagefaculty{
+    width: 300px;
+    height: 300px;
+    display: block; 
+}
+.FacultyName{
+    text-align: center;
+    color: yellow;
+    font-size: 27px;
+}
+.FacultyInfo{
+    text-align: center;
+    color: aquamarine;
+    font-size: 20px;
+    font-weight: normal; 
+    font-style: normal;
+}
+.danimage{
+    display: block;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+b{
+    color: white;
+}
+/*try*/
+.read-more-container{
+    height: auto;
+    color: #111;
+    gap: 2rem;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 
+    "c1 c2 c3";
+}
+.title-container{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px;
+    text-align: center;
+}
+.container{
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 2px;
+    line-height: 1.4rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.1);
+}
+.containermaintext{
+    margin-top: 10px;
+}
+.read-more-btn{
+    color: #0984e3;
+}
+
+.read-more-text{
+    display: none;
+}
+
+.read-more-text--show{
+    display: inline;
+}
+/*About us */
+.topbarbg{
+    background-image: url("Images1/backgroundplmhead.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top -90px;
+    object-fit: cover;
+}
+.topbar{
+    background-color: rgba(177, 140, 37, 0.85);
+    height: 11em;
+}
+.maintitleaboutus{
+    font-size: 2em;
+    padding: 10px;
+    margin: 0px 20px 10px 20px;
+    font-weight: bold;
+}
+.titleaboutus{
+    font-size: 2em;
+    padding: 10px;
+    margin: 0px 20px 10px 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+.aboutustext{
+    font-size: 19px;
+    margin-left: 30px;
+    padding: 10px;
+}
+.introductionsection{
+    padding: 2rem;
+    background-color: black;
+    border-radius: 2px;
+    line-height: 1.4rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+.read-more-btn{
+    color: #0984e3;
+}
+.read-more-text{
+    display: none;
+}
+.read-more-text--show{
+    display: inline;
+}
+.aboutuslist{
+    font-size: 19px;
+    margin-left: 50px;
+    list-style-type: circle;
+    padding: 5px;
+}
+.introductionsection{
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.headaboutus{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    ".textcompsci .mainvideo";
+}
+.maintext{
+    color: gold;
+    font-size: 65px;
+    font-weight: 600;
+    padding: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+}
+.textcompsci{
+    margin-left: 50px;
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainvideo{
+    display: block;
+    text-align: right;
+    justify-content: right;
+    margin-right: 100px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+
+/*Home Page*/
+
+main .aboutusbody {
+    margin:0;
+    padding:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items:center;
+    box-sizing: border-box;
+}
+.body {
+    overflow: hidden;
+}
+
+.cover {
+    width: 100%;
+    position:relative;
+    margin:0;
+    padding-right:0;
+    border-width:0;
+
+}
+.what {
+    padding: 50px;
+    padding-bottom:15px;
+    font-size: 250%;
+}
+
+.mainnews{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
+.wrapper, 
+.slide{
+    width: 100%;
+    height: 100%;
+}
+.slide{
+    overflow: hidden;
+    
+}
+.slide::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+.slide .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slide .image-data{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: left;
+}
+.image-data .text{
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    left: 50%;
+    padding: 10px;
+    margin-left: 50px;
+}
+.text .bold{
+    font-size: 32px;
+    margin-left: -10px;;
+}
+.image-data h2{
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+a.buttonslide{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #333;
+    background: white;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+a.buttonslide:hover{
+    background-color: yellow;
+}
+buttonhref:hover{
+    background: rgba(100, 6, 207, 0.521);
+}
+/* Swipper button css */
+
+
+@keyframes news {
+    0% {left: 0}
+    20% {left: 0}
+    25% {left: -100%}
+    45% {left: -100%}
+    50% {left: -200%}
+    70% {left: -200%}
+    75% {left: -300%}
+    95% {left: -300%}
+    100% {left: -400%}
+}
+
+.noone {
+    padding-top:50px;
+    padding-bottom:50px;
+    display:inline-block;
+}
+
+.officerslogo {
+    float:left;
+    padding-left: 300px;
+
+}
+
+.text1 {
+    float:right;
+    padding-top:80px;
+    padding-left:50px;
+    font-size:210%;
+}
+.a{
+    color:gold;
+}
+.b{
+    color:gold;
+}
+.c{
+    color:white;
+}
+
+.button1 {
+    width: 150px;
+    color:white;
+    font-size: 20px;
+    padding: 12px ;
+    background:gold;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    margin-top: 10px;
+
+}
+.notwo {
+    padding-top:50px;
+    padding-bottom:50px;
+    display:inline-block;
+}
+
+.text2 {
+    float:left;
+    padding-top:80px;
+    padding-left:330px;
+    font-size:210%;
+}
+.x{
+    color:gold;
+}
+.y{
+    color:gold;
+}
+.z{
+    color:white;
+}
+.facultylogo {
+    float:right;
+    padding-left:60px;
+
+}
+
+.button2 {
+    width: 150px;
+    color:white;
+    font-size: 20px;
+    padding: 12px ;
+    background:gold;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.nothree {
+    padding-top:50px;
+    padding-bottom:50px;
+    display:inline-block;
+}
+
+.AARlogo {
+    float:left;
+    padding-left: 300px;
+
+}
+
+.text3 {
+    float:right;
+    padding-top:80px;
+    padding-left:50px;
+    font-size:210%;
+}
+.o {
+    color:gold;
+}
+
+.p{
+    color:white;
+}
+
+.button3 {
+    width: 150px;
+    color:white;
+    font-size: 20px;
+    padding: 12px ;
+    background:gold;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.question {
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align:center
+}
+
+.question h4 {
+    padding-bottom:10px;
+    font-size:22px;
+}
+
+.button5 {
+    width: 180px;
+    color:white;
+    font-size: 17px;
+    padding: 10px ;
+    background:gold;
+    border: 0;
+    border-radius: 12px;
+    outline: none;
+    margin-top: 10px;
+}
+
+/*sticky*/
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+ 
+  #navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /*Our Team */
+  .maintitleourteam{
+    font-size: 60px;
+    margin-left: 200px;
+    margin-top: 15px;
+    
+  }
+.teamname{
+    font-size: 70px ;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#ff0000,#ffae00 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.quoteourteam{
+    background: linear-gradient(to right,#ff0000,#ffae00 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+  .secondourteam{
+    font-size: 40px ;
+    margin-left: 200px;
+  }
+
+  /*Team Pictures*/
+  .teamPictures{
+    max-height: 300px; 
+    max-width: 300px;
+  }
+  .Caliguia{
+    background-image: url("OurTeamImages/Caliguia\,\ Marcuz.jpg");
+    display: block;
+    height: 1000px;
+    width: 1000px;
+    background-position: center right -25px;
+  }
+  .Quiambao{
+    background-image: url("OurTeamImages/Quiambao.jpg");
+    display: block;
+    height: 1000px;
+    width: 1000px;
+    background-size: cover;
+  }
+  .Banzon{
+    background-image: url("OurTeamImages/Banzon.jpg");
+    display: block;
+    height: 1000px;
+    width: 1000px;
+    background-size: cover;
+  }
+  .Decapia{
+    background-image: url("OurTeamImages/Decapia.jpg");
+    display: block;
+    height: 1000px;
+    width: 1000px;
+    background-size: cover;
+  }
+  .Fabros{
+    background-image: url("OurTeamImages/reagan.jpg");
+    display: block;
+    height: 1000px;
+    width: 1000px;
+    background-size: cover;
+  }
+  .Gegabalen{
+    background-image: url("OurTeamImages/Gegabalen.jpg");
+    display: block;
+    height: 1000px;
+    width: 1000px;
+    background-size: cover;
+  }
+  .Levita{
+    background-image: url("OurTeamImages/Levita.jpg");
+    display: block;
+    height: 1000px;
+    width: 1000px;
+    background-size: cover;
+  }
+  .Pineda{
+    background-image: url("OurTeamImages/Pineda.jpg");
+    display: block;
+    height: 1000px;
+    width: 1000px;
+    background-size: cover;
+  }
+  .members-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .picture-container{
+    text-align: center;
+  }
+  .picture-container-text{
+    line-height: 30px;
+    padding: 10px;
+  }
+  .picture-container-text .Role{
+    font-size: 30px;
+  }
+  .picture-container-text .Name{
+    font-size: 15px;
+  }
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+    #navbar {
+      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #navbar-right {
+      float:none
+    }
+  }

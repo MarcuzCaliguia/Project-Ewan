@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Genesis</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+<body class="background">
+
+    <!--NAV BAR-->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-brand">
+                <h1> PLM Computer Science Department<class="imglogo"> </h1>
+            </a>
+            <nav class="navbar">
+                <a href="#" class="nav-brand">
+            <ul class="nav-right">
+                <li class="nav-item">
+                    <a href="main.html" class="nav-link active" >HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="aboutus.html" class="nav-link " >ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ourteam.html" class="nav-link " >OUR TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faculty.html" class="nav-link" >FACULTY</a>
+                </li>
+                <li class="nav-item">
+                <button id="night-mode-btn">Alternate Background</button>
+                <script src="script.js"></script>
+                </li>
+            </li>
+            </ul>
+
+        </nav>    
+    </header>
+    <main class="aboutusbody">
+    <section class="mainnews swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="Images1/News1.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">
+                        <b class="text bold">
+                        <u>
+                            Computer Science General Assembly | November 18, 2022
+                        </u>
+                        </b>
+                        <p class="text">
+                        The Pamantasan ng lungsod ng Maynila Computer Science recently concluded its general Assembly
+                        which was attended by 1st year up to 4th year Computer Science students.
+                        </p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="Images1/News2.jpg" alt="" class="image">
+                <div class="image-data">
+                    <b class="text bold">
+                        <u>
+                            11th IT Skills Olympics 2022
+                        </u>
+                        </b>
+                        <p class="text">
+                            </p>  
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="Images1/yhf.jpg" alt="" class="image">
+                <div class="image-data">
+                    <b class="text bold">
+                        <u>
+                            Young Founder Summit Asia |2019
+                        </u>
+                        </b>
+                        <p class="text">
+                            Young Founder Summit PH: National Champion
+                            <br> Young Founder Summit Asia: Semi-Finalist
+                            </p>  
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <div class="swiper-button-next nav-bnt-slide"></div>
+        <div class="swiper-button-prev nav-bnt-slide"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+        <script src="swiper-bundle.min.js"></script>
+       
+        <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    </div>
+
+
+    <div class="noone">
+        <img src="Images1/CSS Logo.png" height="450" class="officerslogo">
+        <div class="text1">
+            <h1 class="a">COMPUTER</h1>
+            <h1 class="b">SCIENCE</h1>
+            <h1 class="c">SOCIETY</h1>
+            <a href="https://www.facebook.com/PLMComputerScienceSociety" class="buttonhref">
+            <button type="button" class="button1">Learn more</button>
+            </a>
+        </div>
+    </div>
+    <div class="notwo">
+        <img src="Images1/Faculty Logo.png" height="450" class="facultylogo">
+        <div class="text2">
+            <h1 class="x">COMPUTER</h1>
+            <h1 class="y">SCIENCE</h1>
+            <h1 class="z">FACULTY</h1>
+            <a href="faculty.html" class="buttonhref">
+                <button type="button" class="button2">Learn more</button>
+            </a>
+        </div>
+    </div>    
+    <div class="nothree">
+        <img src="Images1/AAR Logo.png" height="450" class="AARlogo">
+        <div class="text3">
+            <h1 class="o">AWARDS &</h1>
+            <h1 class="p">RECOGNITIONS</h1>
+            <a href="" class="buttonhref">
+                <button type="button" class="button3">Learn more</button>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="question">
+            <h4>Looking for more info?</h4>
+            <a href="https://plm.edu.ph/" class="buttonhref">
+                <button type="button" class="button5">Learn more</button>
+            </a>
+    </div>
+    <hr>
+    <div class="misc">
+
+    </div>
+    </main>
+</body>
+</html>
